@@ -1,0 +1,108 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+    border-radius: 50%;
+    background-color: #1890ff;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    text-decoration: none;
+}
+
+.steps {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -120px;
+}
+
+.step::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 40px;
+    margin: 10px 21px 10px;
+    background: #1890ff;
+}
+
+.step:nth-child(3)::after {
+    display: none;
+}
+
+.step-state {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    line-height: 39px;
+    text-align: center;
+    font-size: 16px;
+    color: #1890ff;
+    background-color: #1890ff;
+    background-position: center;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    margin: 4px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.icon.sphere {
+    background-image: url(dist/sphere.svg);
+}
+
+.icon.cylinder {
+    background-image: url(dist/cylinder.svg);
+}
+
+.icon.plane {
+    background-image: url(dist/plane.svg);
+}
+
+.icon.line {
+    background-image: url(dist/line.svg);
+}
+
+.icon.rect {
+    background-image: url(dist/rect.svg);
+}
+
+.step-state.active {
+    background-color: #1890ff;
+    color: #fff;
+}
