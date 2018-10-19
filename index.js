@@ -51,7 +51,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(width, height);
 container.appendChild(renderer.domElement);
 
-const texture = new TextureLoader().load('/dist/world.jpg');
+const texture = new TextureLoader().load('/public/world.jpg');
 
 const earthMaterial = new MeshBasicMaterial({
     side: DoubleSide, map: texture,

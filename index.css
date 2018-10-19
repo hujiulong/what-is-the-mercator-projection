@@ -83,23 +83,23 @@ li {
 }
 
 .icon.sphere {
-    background-image: url(dist/sphere.svg);
+    background-image: url(public/sphere.svg);
 }
 
 .icon.cylinder {
-    background-image: url(dist/cylinder.svg);
+    background-image: url(public/cylinder.svg);
 }
 
 .icon.plane {
-    background-image: url(dist/plane.svg);
+    background-image: url(public/plane.svg);
 }
 
 .icon.line {
-    background-image: url(dist/line.svg);
+    background-image: url(public/line.svg);
 }
 
 .icon.rect {
-    background-image: url(dist/rect.svg);
+    background-image: url(public/rect.svg);
 }
 
 .step-state.active {
